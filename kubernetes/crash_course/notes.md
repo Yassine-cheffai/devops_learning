@@ -1,0 +1,7 @@
+- https://www.youtube.com/watch?v=s_o8dwzRlu4
+- secrets need a third party tool to be securly encrypted
+- important: kubernetes doesn't manage data persistance
+- Deployment: for stateLESS apps
+- StatefulSet: for stateFul apps or Databases
+- a common practice is to host the DB outside the cluster, so we don't need to struggle with StatefulSet
+- kubernetes configuration is declarative, we declate what is our desired outcome from kubernetes 

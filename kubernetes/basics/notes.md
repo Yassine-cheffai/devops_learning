@@ -1,0 +1,15 @@
+- https://www.youtube.com/watch?v=VnvRFRk_51k
+- kubernetes: open source **container orchestration** tool
+- as many system use microserves and sometimes a lot of services, there is a need for a tool that can manage those services
+- an orchestration tool offer:
+    - high availability or no downtime
+    - scalability or high performance
+    - disaster recovery - backup and restore
+- worker nodes have more resources because they do most of the work
+- master nodes have is the most important node, because if we lose it we lose access to our cluster, that's we should always have a buckup for master, at least 2 masters in a kubernestes cluster
+- the virtual network allow all the nodes to talk to each others, it turn all the nodes into one unified powerful machine
+- pods are the smallest component
+- pod is a wrapper of a container
+- usualy one pod per application
+- each pod is it self contained server
+- a sevice have 2 main roles: provide a permanent ip adress, load balancer
