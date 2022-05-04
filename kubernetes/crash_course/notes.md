@@ -1,7 +1,9 @@
 - https://www.youtube.com/watch?v=s_o8dwzRlu4
+- https://gitlab.com/nanuchi/k8s-in-1-hour/-/tree/master/
 - secrets need a third party tool to be securly encrypted
 - important: kubernetes doesn't manage data persistance
 - Deployment: for stateLESS apps
 - StatefulSet: for stateFul apps or Databases
 - a common practice is to host the DB outside the cluster, so we don't need to struggle with StatefulSet
 - kubernetes configuration is declarative, we declate what is our desired outcome from kubernetes 
+- deployment and service go into one yml file because a deployment need a service most of the time
