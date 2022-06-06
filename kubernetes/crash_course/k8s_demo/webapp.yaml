@@ -41,6 +41,8 @@ kind: Service
 metadata:
   name: webapp-service
 spec:
+  # default ClusterIP wich is an internal service type, NodePort is an external Service type
+  # it require a nodePort
   type: NodePort
   selector:
     app: webapp
@@ -48,4 +50,5 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
+      # range between 30000 and 32767
       nodePort: 30100

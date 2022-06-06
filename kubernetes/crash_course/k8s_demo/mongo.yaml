@@ -7,10 +7,12 @@ metadata:
 spec:
   replicas: 1
   selector:
+    # all the pods that match this label belong to this depoyment
     matchLabels:
       app: mongo
   template:
     metadata:
+     # this label used to identify pods that are running this app
       labels:
         app: mongo
     spec:
@@ -36,9 +38,12 @@ kind: Service
 metadata:
   name: mongo-service
 spec:
+  # specify what pods the service need to forward the requests to
   selector:
     app: mongo
   ports:
     - protocol: TCP
+      # port of the service
       port: 27017
+      # the port of the pod, the service will forward the request to this port
       targetPort: 27017
